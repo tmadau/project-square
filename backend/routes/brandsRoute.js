@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { request } from 'express';
 import multer from 'multer';
 import { Brand } from '../models/brandModel.js';
 
@@ -11,7 +11,7 @@ const storage = multer.diskStorage({
 	},
 	filename: function(_request, file, callback) {
 		const uniqueSuffix = Date.now();
-		callback(null, uniqueSuffix + file.originalname)
+		callback(null, uniqueSuffix + '-' + file.originalname);
 	}
 });
 
