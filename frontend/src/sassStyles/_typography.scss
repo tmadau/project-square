@@ -1,0 +1,56 @@
+@import './mixins';
+
+h1 {
+  // font-style: normal;
+  // font-weight: bold;
+  // font-size: 34px;
+  // line-height: 1.2em;
+  // margin: 0;
+  color: $textLight2;
+}
+
+h2 {
+  color: $textDark2;
+}
+
+footer h2 {
+  color: $textLight3;
+}
+
+footer p {
+  color: $textLight1;
+}
+
+h4 {
+  color: $textLight2
+}
+
+header p {
+  color: $textLight3;
+}
+
+a {
+  color: $textLight1;
+  text-decoration: none;
+  &:hover {
+    color: $textDark2;
+  }
+}
+
+header nav button {
+  color: $primaryColor;
+  background-color: $textLight1;
+  &:hover {
+    background-color: $primaryDark;
+    color: $textLight1;
+  }
+}
+
+button {
+  color: $textLight1;
+  background-color: $primaryColor;
+  &:hover {
+    color: $textLight1;
+    background-color: $primaryDark;
+  }
+}
