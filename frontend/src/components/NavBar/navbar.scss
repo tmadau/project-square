@@ -1,0 +1,10 @@
+@import '../../sassStyles/mixins';
+@import '../../sassStyles/variables';
+
+nav {
+  background-color: $primaryColor;
+}
+
+ul {
+  margin: 0;
+}
