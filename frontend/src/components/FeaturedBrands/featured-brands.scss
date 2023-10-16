@@ -1,0 +1,17 @@
+
+@import '../../sassStyles/variables';
+
+.image-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 70px;
+  row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: $spacer1;
+}
+
+.featured-spacer {
+  padding-bottom: 30px;
+}

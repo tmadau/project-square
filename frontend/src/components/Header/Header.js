@@ -3,10 +3,13 @@ import './header.scss';
 
 const Header = ({ paragraph, heading }) => {
   return (
-    <>
-      <p>{paragraph}</p>
+    <div className='header-container'>
+      <div className='featured-spacer'>
+        <div className='line'></div>
+        <p>{paragraph}</p>
+      </div>
       <h2>{heading}</h2>
-    </>
+    </div>
   )
 }
 

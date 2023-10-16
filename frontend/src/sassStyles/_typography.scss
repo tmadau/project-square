@@ -1,16 +1,18 @@
 @import './mixins';
 
 h1 {
-  // font-style: normal;
-  // font-weight: bold;
-  // font-size: 34px;
-  // line-height: 1.2em;
-  // margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
   color: $textLight2;
+  margin: 0;
 }
 
 h2 {
   color: $textDark2;
+  font-weight: 700;
+  font-size: 37px;
+  margin: 0;
 }
 
 footer h2 {
@@ -21,12 +23,34 @@ footer p {
   color: $textLight1;
 }
 
+.card h3 {
+  color: $textLight2;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.card p {
+  color: $textLight1;
+}
+
 h4 {
-  color: $textLight2
+  color: $textDark1;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+header button {
+  font-weight: 700;
+  font-size: 14px;
 }
 
 header p {
   color: $textLight3;
+}
+
+p, header p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 a {

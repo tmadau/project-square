@@ -1,2 +1,9 @@
 @import '../../sassStyles/mixins';
 @import '../../sassStyles/variables';
+
+.article-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 50px;
+  margin-top: $spacer1;
+}

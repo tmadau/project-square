@@ -37,10 +37,12 @@ const Article = () => {
       <Header 
         paragraph="What we do"
         heading="We offer a complete range of bespoke design and development services to help you turn your ideas into digital masterpieces" 
-      /> 
-      {articleData.map((card, index) => (
-       <ArticleContent key={index} {...card} /> 
-      ))}
+      />
+      <div className='article-container'>
+        {articleData.map((card, index) => (
+          <ArticleContent key={index} {...card} /> 
+        ))}
+      </div>
     </section>
   )
 }

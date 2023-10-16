@@ -2,4 +2,40 @@
 
 footer {
   background-color: $primaryDark;
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+    padding: $spacer1 0;
+    column-gap: 100px;
+    row-gap: 60px;
+
+    h2 {
+      padding: 30px 30% 0 0;
+    }
+
+    .address-details {
+      padding: 30px 40% 0 0;
+      
+      p {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .links-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-self: baseline;
+    line-height: 1.5rem;
+  }
+}
+
+ul li {
+  list-style: none;
 }

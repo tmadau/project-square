@@ -4,20 +4,29 @@ import Article from './components/Article/Article';
 import CaseStudies from './components/CaseStudies/CaseStudies';
 import FeaturedBrands from './components/FeaturedBrands/FeaturedBrands';
 import Footer from './components/Footer/Footer';
+import { Element } from 'react-scroll';
 
 function App() {
   return (
     <>
       <header>
         <NavBar />
-        <Hero />
+        <Element name='Services'>
+          <Hero />
+        </Element>
       </header>
       <main>
-        <Article />
-        <CaseStudies />
+        <Element name='Industries'>
+          <Article />
+        </Element>
+        <Element name='Cases'>
+          <CaseStudies />
+        </Element>
         <FeaturedBrands />
       </main>
-      <Footer />
+      <Element name='Contact'>
+        <Footer />
+      </Element>
     </>
   );
 }

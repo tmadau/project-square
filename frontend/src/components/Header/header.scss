@@ -1,2 +1,19 @@
 @import '../../sassStyles/mixins';
 @import '../../sassStyles/variables';
+
+.header-container {
+  div {
+    display: flex;
+    align-items: center;
+
+    .line {
+      height: 3px;
+      width: 30px;
+      background-color: $primaryLight;
+    }
+
+    p {
+      padding-left: 10px;
+    }
+  }  
+}

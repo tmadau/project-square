@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +18,27 @@ body {
   font-family: 'Inter';
 }
 
+main, nav, footer, .hero-image {
+  padding: 0 $spacer2;
+}
+
 #root {
   height: 100%;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 25px;
+  margin: 10px 0;
+}
+
+section, footer {
+  margin-top: $spacer1;
 }
