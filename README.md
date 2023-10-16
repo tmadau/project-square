@@ -8,24 +8,41 @@ Backend created using NodeJS and Express
 
 ### `npm run dev`
 
-cd into backend folder: `cd backend/`
-create `.env` file and store: `MONGODB_URL` and `PORT` variables.
-On MONGODB_URL store mongodb `URL`: `https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database`
+#### `cd backend/`
+
+cd into `frontend` folder from the root directory of the repo
+
+#### `creat env file:`
+
+create `.env` file and store: `MONGODB_URL` and `PORT` variables
+
+#### `steps on how to setup mongo for free`
+
+Click here -> [setup](https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database)
+
+#### `server link:`
+
 What you choose as your `PORT` will determine the server link, I had mine set at `8080`
-And then `npm install` inside the backend folder in order to install all the packages
-Then `npm run dev` to run the backend server, which will be served on: `http://localhost:8080` or `http://localhost:<What-ever-port-stored-on-env>`
+
+#### `npm install`
+
+Run `npm install` inside the backend folder in order to install all the packages
+
+#### npm run dev
+
+Run `npm run dev` To run the backend server, which will be served on: `http://localhost:8080` or `http://localhost:<What-ever-port-stored-on-env>`
 
 ### API structure:
 
-#### POST:
+#### `POST:`
 
 `http://localhost:8080/featured-brands` to upload images to the server with publish date
 
-#### GET:
+#### `GET:`
 
 `http://localhost:8080/featured-brands` to get brands filtered by date published
 
-#### DELETE:
+#### `DELETE:`
 
 `http://localhost:8080/featured-brands/:id` to delete brands stored on server
 
@@ -33,11 +50,10 @@ Then `npm run dev` to run the backend server, which will be served on: `http://l
 
 Front end is in reactjs
 
-### `npm start`
+#### `cd frontend/`
 
-cd into front folder from the root directory of the repo `cd frontend`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+cd into `frontend` folder from the root directory of the repo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### `npm start`
+
+Run npm start to run the server which is on :[http://localhost:3000](http://localhost:3000) to view it in your browser.
