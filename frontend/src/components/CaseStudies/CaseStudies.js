@@ -25,7 +25,7 @@ const responsiveSettings = [
     },
   },
   {
-    breakpoint: 768, // Another breakpoint
+    breakpoint: 576, // Another breakpoint
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -50,9 +50,19 @@ const cardData = [
     paragraph: 'Helping South Africans become #CashCleva with Skhokho and TymeBank.'
   },
   {
+    imageURL: theOlympian,
+    title: 'The Olympian',
+    paragraph: 'The only athlete in the world to do her Olympic routine in 2020.'
+  },
+  {
     imageURL: savingsJar,
     title: 'The Savings Jar',
     paragraph: 'Grow your savings treasure and grow your dragon.'
+  },
+  {
+    imageURL: skhoSkho,
+    title: 'Skhokho seMali',
+    paragraph: 'Helping South Africans become #CashCleva with Skhokho and TymeBank.'
   }
 ];
 

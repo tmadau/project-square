@@ -44,3 +44,7 @@ button {
 section, footer {
   margin-top: $spacer1;
 }
+
+.slick-slide > div {
+  margin: 0 10px;
+}
