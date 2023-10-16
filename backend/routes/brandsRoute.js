@@ -49,8 +49,8 @@ router.post('/', upload.single('image'), async (request, response) => {
 // Route for GET All brands sorted by publishDate
 router.get('/', async (_request, response) => {
   try {
-		// Sort by publishDate in descending order: new to old
-		const brands = await Brand.find().sort({ publishDate: -1 });
+		// Sort by publishDate in descending order: old to new
+		const brands = await Brand.find().sort({ publishDate: 1 });
 
     return response.status(200).json({
 			count: brands.length,
