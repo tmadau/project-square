@@ -5,7 +5,7 @@ import CardContent from './CardContent';
 import theOlympian from './the-olympian.png';
 import savingsJar from './savings-jar.png';
 import skhoSkho from './skho-skho.png';
-import Slider from './react-slick';
+import Slider from 'react-slick';
 
 const settings = {
   dots: true,
@@ -50,9 +50,9 @@ const cardData = [
     paragraph: 'Helping South Africans become #CashCleva with Skhokho and TymeBank.'
   },
   {
-    imageURL: theOlympian,
-    title: 'The Olympian',
-    paragraph: 'The only athlete in the world to do her Olympic routine in 2020.'
+    imageURL: savingsJar,
+    title: 'The Savings Jar',
+    paragraph: 'Grow your savings treasure and grow your dragon.'
   }
 ];
 

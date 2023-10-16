@@ -41,7 +41,7 @@ const Footer = () => {
           <p>
             22 Street Name, Surburb, 8000, Cape Town, South Africa +27 21 431 0001
           </p>
-          <a href=''>enquirie@website.co.za</a>
+          <a href='/'>enquirie@website.co.za</a>
         </div>
         <div className='links-container'>
           <div>

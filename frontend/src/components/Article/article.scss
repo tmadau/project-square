@@ -6,4 +6,19 @@
   grid-template-columns: auto auto auto auto;
   column-gap: 50px;
   margin-top: $spacer1;
+  // display: flex;
+
+  @include customMaxBreakPoint(1100) {
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+  }
+
+  @include customMaxBreakPoint(576) {
+    grid-template-columns: auto;
+    row-gap: 30px;
+  }
+
+  article {
+    padding: 0 20px;
+  }
 }

@@ -1,5 +1,6 @@
 
 @import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
 
 .image-list {
   display: grid;
@@ -10,6 +11,25 @@
   align-items: center;
   justify-content: center;
   margin-top: $spacer1;
+
+  @include customMaxBreakPoint(1200) {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  @include customMaxBreakPoint(1100) {
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+  }
+
+  @include customMaxBreakPoint(680) {
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+  }
+
+  @include customMaxBreakPoint(576) {
+    grid-template-columns: auto;
+    row-gap: 100px;
+  }
 }
 
 .featured-spacer {
