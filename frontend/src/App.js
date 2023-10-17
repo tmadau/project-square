@@ -5,7 +5,6 @@ import CaseStudies from './components/CaseStudies/CaseStudies';
 import FeaturedBrands from './components/FeaturedBrands/FeaturedBrands';
 import Footer from './components/Footer/Footer';
 import { Element } from 'react-scroll';
-// import TestCm from './components/TestCm/TestCm';
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
           <Article />
         </Element>
         <Element name='Cases'>
-          {/* <TestCm /> */}
           <CaseStudies />
         </Element>
         <FeaturedBrands />
