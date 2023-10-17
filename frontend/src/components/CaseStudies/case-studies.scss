@@ -1,47 +1,88 @@
 @import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
 
-.card {
-  top: 87px;
-  background-color: #fff;
-  // box-shadow: 0 8px 16px rgba(54, 54, 54, 0.1);
-  width: 399px;
-  height: 399px;
-  justify-content: flex-start;
+.container {
+  display: flex;
+  justify-content: center;
+  
+  .card {
+    height: 399px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    height: 399px;
+    width: 350px;
+  }
 
-  div {
+  .card .content {
+    height: 500px;
+    width: 350px;
+    box-sizing: border-box;
+    position: absolute;
+    background-image: linear-gradient(360deg, white, black, transparent);
+    bottom: -363px;
+    padding: 10px;
+
+    @include customMaxBreakPoint(1316) {
+      width: 346px;
+    }
+
+    @include customMaxBreakPoint(1300) {
+      width: 345px;
+    }
+
+    @include customMaxBreakPoint(1292) {
+      width: 343px;
+    }
+
+    @include customMaxBreakPoint(1288) {
+      width: 340px;
+    }
+
+    @include customMaxBreakPoint(1279) {
+      width: 338px;
+    }
+
+    @include customMaxBreakPoint(1265) {
+      width: 335px;
+    }
+
+    @include customMaxBreakPoint(1252) {
+      width: 330px;
+    }
+
+    @include customMaxBreakPoint(1234) {
+      width: 325px;
+    }
+
+    @include customMaxBreakPoint(376) {
+      width: 299px;
+    }
+
+    @include customMaxBreakPoint(391) {
+      width: 305px;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin: 12px 0;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .card .line2 {
+    height: 4px;
+    width: 30px;
+    background-color: $primaryLight;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    z-index: 0;
-
-    div {
-      margin: 0 !important;
-      width: 100%;
-      right: 0;
-      bottom: 0;
-      // background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.85));
-      justify-content: flex-end;
-      padding: 24px;
-      box-sizing: border-box;
-      gap: 16px;
-      z-index: 1;
-    }
-    
-    img {
-      position: relative;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-      object-fit: cover;
-    }
-
-    .line2 {
-      height: 3px;
-      width: 30px;
-      background-color: $primaryLight;
-      display: flex;
-      align-items: center;
-    }
+    align-items: center;
   }
 }
