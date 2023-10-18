@@ -1,76 +1,42 @@
-@import '../../sassStyles/variables';
-@import '../../sassStyles/mixins';
+@import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
 
 .container {
   display: flex;
   justify-content: center;
-  
+
   .card {
     height: 399px;
     overflow: hidden;
   }
-  
+
   .card img {
     height: 399px;
     width: 350px;
+    object-fit: cover;
   }
 
   .card .content {
-    height: 500px;
-    width: 350px;
-    box-sizing: border-box;
+    width: 399px;
     position: absolute;
-    background-image: linear-gradient(360deg, white, black, transparent);
-    bottom: -363px;
-    padding: 10px;
-
-    @include customMaxBreakPoint(1316) {
-      width: 346px;
-    }
-
-    @include customMaxBreakPoint(1300) {
-      width: 345px;
-    }
-
-    @include customMaxBreakPoint(1292) {
-      width: 343px;
-    }
-
-    @include customMaxBreakPoint(1288) {
-      width: 340px;
-    }
-
-    @include customMaxBreakPoint(1279) {
-      width: 338px;
-    }
-
-    @include customMaxBreakPoint(1265) {
-      width: 335px;
-    }
-
-    @include customMaxBreakPoint(1252) {
-      width: 330px;
-    }
-
-    @include customMaxBreakPoint(1234) {
-      width: 325px;
-    }
-
-    @include customMaxBreakPoint(376) {
-      width: 299px;
-    }
-
-    @include customMaxBreakPoint(391) {
-      width: 305px;
-    }
+    bottom: 3px;
+    padding: 12px 20px;
 
     h3 {
       font-size: 25px;
       margin: 12px 0;
+
+      @include customMaxBreakPoint(390) {
+        font-size: 20px;
+      }
     }
 
     p {
       font-size: 15px;
+
+      @include customMaxBreakPoint(390) {
+        font-size: 12px;
+      }
     }
 
     &:hover {
