@@ -1,17 +1,18 @@
-@import '../../sassStyles/mixins';
-@import '../../sassStyles/variables';
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
 
 .hero-image {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
+  width: 100%;
   color: #fff;
   text-align: left;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column;
-  background-image: url('./Hero-Image.jpg');
+  background-image: url("./Hero-Image.jpg");
 
   div {
     padding: 0 55% 15% 0;

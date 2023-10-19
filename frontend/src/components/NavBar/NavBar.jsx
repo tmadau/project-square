@@ -1,9 +1,9 @@
-import React from 'react';
-import { useState } from 'react';
-import logo from './logo.svg';
-import menuHamBurger from './menu-hamburger.svg';
-import { Link } from 'react-scroll';
-import './navbar.scss';
+import React from "react";
+import { useState } from "react";
+import logo from "./logo.svg";
+import menuHamBurger from "./menu-hamburger.svg";
+import { Link } from "react-scroll";
+import "./navbar.scss";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -24,70 +24,70 @@ const NavBar = () => {
           to="home"
           spy={true}
           smooth={true}
-          offset={-70}
-          duration={500}
+          offset={-60}
+          duration={150}
           onClick={closeMenu}
         >
           <img src={logo} alt="logo" />
         </Link>
         <div>
-          <img src={menuHamBurger} alt='hamburger menu'/>
+          <img src={menuHamBurger} alt="hamburger menu" />
         </div>
       </div>
-      <ul className={`nav-links ${showMenu ? 'active' : ''}`}>
+      <ul className={`nav-links ${showMenu ? "active" : ""}`}>
         <Link
           activeClass="active"
           to="home"
           spy={true}
           smooth={true}
-          offset={-70}
-          duration={500}
+          offset={-60}
+          duration={150}
           onClick={closeMenu}
         >
           <img src={logo} alt="logo" />
         </Link>
         <div>
           <Link
-              activeClass="active"
-              to="Services"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={closeMenu}
+            activeClass="active"
+            to="Services"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={150}
+            onClick={closeMenu}
           >
             Services
           </Link>
           <Link
-              activeClass="active"
-              to="Industries"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={closeMenu}
+            activeClass="active"
+            to="Industries"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={150}
+            onClick={closeMenu}
           >
             Industries
           </Link>
           <Link
-              activeClass="active"
-              to="Cases"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={closeMenu}
+            activeClass="active"
+            to="Cases"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={150}
+            onClick={closeMenu}
           >
             Cases
           </Link>
           <Link
-              activeClass="active"
-              to="Contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={closeMenu}
+            activeClass="active"
+            to="Contact"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={150}
+            onClick={closeMenu}
           >
             Contact
           </Link>
@@ -97,7 +97,7 @@ const NavBar = () => {
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

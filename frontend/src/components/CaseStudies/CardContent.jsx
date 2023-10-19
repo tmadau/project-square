@@ -10,9 +10,7 @@ const CardContent = ({ imageURL, title, paragraph }) => {
   return (
     <div className="container">
       <div className="card">
-        <div>
-          <img src={imageURL} al={title} style={imageStyle} />
-        </div>
+        <img src={imageURL} al={title} style={imageStyle} />
         <div className="content">
           <div className="line2"></div>
           <h3>{title}</h3>

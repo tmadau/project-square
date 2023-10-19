@@ -1,9 +1,12 @@
-@import '../../sassStyles/mixins';
-@import '../../sassStyles/variables';
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
 
 nav {
   background-color: $primaryColor;
-  
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
   ul {
     margin: 0;
     padding: 0;
@@ -26,31 +29,34 @@ nav {
     flex-direction: column;
     cursor: pointer;
   }
-  
+
   .nav-links {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
   }
-  
+
   .nav-links a {
-    color: white;
     cursor: pointer;
   }
-  
+
+  .active {
+    color: $primaryDark;
+  }
+
   /* Media query for mobile menu */
   @media (max-width: 820px) {
     .menu-icon {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      
+
       div {
         flex: unset;
       }
     }
-  
+
     .nav-links {
       display: none; /* Hide links by default on smaller screens */
       flex-direction: column;
@@ -62,7 +68,7 @@ nav {
       transition: 0.3s;
       z-index: 1;
     }
-  
+
     .nav-links.active {
       display: flex;
       align-items: flex-start;
@@ -79,7 +85,7 @@ nav {
         display: none;
       }
     }
-  
+
     .nav-links li {
       padding: 10px 0;
     }
